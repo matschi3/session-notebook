@@ -146,7 +146,7 @@ a[href^="https"] {
 
 ## Combinators
 
-- **descendant** -Combinator `(" ")`  
+- **descendant** -Combinator `"  "`  
   // jedes `p`-Element, verschachtelt in `allen Ebenen` von `.class`
 
 ```
@@ -179,7 +179,7 @@ img ~ p {
 
 - **adjacent sibling** -Combinator `+`  
   // **jedes _erste_** `p` -Element, das einem `img` -Element folgt  
-  // und `in der selben verschachtelten Ebene` steckt. Bzw. `selbes Parent-Element` hat
+  // und `in der selben verschachtelten Ebene` steckt. Bzw. `gleiches Parent-Element` hat
 
 ```
 img + p {
