@@ -132,4 +132,58 @@ a[href^="https"] {
 
 ---
 
+## Pseudo Selectors
+
+> ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
+
+---
+
+## Selektor-Hierachy
+
+> ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
+
+---
+
 ## Combinators
+
+- **descendant** -Combinator `(" ")`  
+  // jedes `p`-Element, verschachtelt in `allen Ebenen` von `.class`
+
+```
+.class p {
+}
+```
+
+---
+
+- **child** -Combinator `>`  
+  // jedes `p` -Element, verschachtelt in `1. Ebene` von `.class`
+
+```
+.class > p {
+}
+```
+
+---
+
+- **general sibling** -Combinator `~`  
+  // **alle\* `p` -Elemente, die **direkt\*\* einem `img` -Element folgen  
+  // und `in der selben verschachtelten Ebene` stecken. Bzw. `selbes Parent-Element` haben
+
+```
+img ~ p {
+}
+```
+
+---
+
+- **adjacent sibling** -Combinator `+`  
+  // das **eine** `p` -Element, das **direkt** einem `img` -Element folgt  
+  // und `in der selben verschachtelten Ebene` steckt. Bzw. `selbes Parent-Element` hat
+
+```
+img + p {
+}
+```
+
+---
