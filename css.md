@@ -70,9 +70,7 @@ Simple implementation of seperated `styles.css`-file in `<head>` of the HTML doc
 > 💡 The property `box-sizing` changes the way how the `width` and `height` of an element is calculated.
 > The default value is `content-box`. The values of `width` and `height` set the size of the "content
 > box". With the value `border-box`, the size of the "border box" is set instead.  
-> Now, the `width` property defines the size of the border box, padding and border width are
-
-## subtracted to calculate the available space for the content.
+> Now, the `width` property defines the size of the border box, padding and border width are subtracted to calculate the available space for the content.
 
 - **element**/type -Selektor  
   // wählt HTML Elemente anhand ihres Typen:
@@ -129,7 +127,7 @@ a[href^="https"] {
 ```
 
 > 🧩 BestPractise:  
-> .class-Selektor hauptsächlich benutzen
+> .class-Selektor hauptsächlich benutzen  
 > #ID-Selektor **nicht** für styling
 
 ---
