@@ -1,2 +1,2 @@
-These files are my personal session-notebook, most of it written in german language.
+These files are my personal notes, written in german and english language.
 Feel free to use.

@@ -15,7 +15,8 @@ Der Markdown(.md)-Syntax ermöglicht das schreiben von formatiertem Text, welche
 | `- uListItem`                          | unordered ListItem                                           |
 | `1. oListItem`                         | ordered ListItem                                             |
 | `[link text](https://www.example.com)` | [externerLink](https://www.example.com)                      |
-| `[link text](../project/README.md)`    | relativerLink                                                |
+| `[link text](../project/README.md)`    | relativerLink (überordnes Verzeichnis)                       |
+| `[link text](./project/README.md)`     | relativerLink (Verzeichnis)                                  |
 | `![Bildbeschreibung](img-url)`         | Bild                                                         |
 | `` `inline Codeblock` ``               | `inline Codeblock`                                           |
 | ` ``` Codeblock ``` `                  | `Codeblock`                                                  |
