@@ -167,8 +167,8 @@ a[href^="https"] {
 ---
 
 - **general sibling** -Combinator `~`  
-  // **alle\* `p` -Elemente, die **direkt\*\* einem `img` -Element folgen  
-  // und `in der selben verschachtelten Ebene` stecken. Bzw. `selbes Parent-Element` haben
+  // **jedes** `p` -Element, das einem `img` -Element folgt  
+  // und `in der selben verschachtelten Ebene` steckt. Bzw. `gleiches Parent-Element` hat
 
 ```
 img ~ p {
@@ -178,7 +178,7 @@ img ~ p {
 ---
 
 - **adjacent sibling** -Combinator `+`  
-  // das **eine** `p` -Element, das **direkt** einem `img` -Element folgt  
+  // **jedes _erste_** `p` -Element, das einem `img` -Element folgt  
   // und `in der selben verschachtelten Ebene` steckt. Bzw. `selbes Parent-Element` hat
 
 ```
