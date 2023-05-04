@@ -12,12 +12,12 @@
 
 Es können **mehrere Elemente** mit **einem Ruleset** gestyled werden, sowie **mehrere Deklarationen** in einem **Ruleset** vorhanden sein:
 
-```
+```css
 h1,
 h2,
 h3 {
-    color: green;
-    font-size: 12px;
+  color: green;
+  font-size: 12px;
 }
 ```
 
@@ -27,7 +27,7 @@ h3 {
 
 Simple implementation of seperated `styles.css`-file in `<head>` of the HTML document, so that styles get loaded into the browser before the Content does.
 
-```
+```html
 <head>
   ...
   <link rel="stylesheet" href="./file/styles.css" />
@@ -61,9 +61,9 @@ Simple implementation of seperated `styles.css`-file in `<head>` of the HTML doc
 - **universal** -Selektor  
   // wählt alles (kann durch **Combinators** gezielt eingesetzt werden):
 
-```
+```css
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 ```
 
@@ -75,7 +75,7 @@ Simple implementation of seperated `styles.css`-file in `<head>` of the HTML doc
 - **element**/type -Selektor  
   // wählt HTML Elemente anhand ihres Typen:
 
-```
+```css
 h1 {
 }
 ```
@@ -85,7 +85,7 @@ h1 {
 - **.class** -Selektor  
   // wählt Elemente einer bestimmten Klasse:
 
-```
+```css
 .box {
 }
 ```
@@ -95,7 +95,7 @@ h1 {
 - **#ID** -Selektor  
   // wählt _ein Element_ mit eindeutiger ID:
 
-```
+```css
 #unique {
 }
 ```
@@ -107,21 +107,21 @@ h1 {
 
 Alle Elemente generell mit `type` -Attribut:
 
-```
+```css
 [type] {
 }
 ```
 
 Alle Elemente mit `type` -Attribut und dazugehörigem Wert `"button"`:
 
-```
+```css
 [type="button"] {
 }
 ```
 
 Alle `a` -Elemente mit `href` -Attribut **_beginnend_** mit Wert `"https"`:
 
-```
+```css
 a[href^="https"] {
 }
 ```
@@ -149,7 +149,7 @@ a[href^="https"] {
 - **descendant** -Combinator `"  "`  
   // jedes `p`-Element, verschachtelt in `allen Ebenen` von `.class`
 
-```
+```css
 .class p {
 }
 ```
@@ -159,7 +159,7 @@ a[href^="https"] {
 - **child** -Combinator `>`  
   // jedes `p` -Element, verschachtelt in `1. Ebene` von `.class`
 
-```
+```css
 .class > p {
 }
 ```
@@ -170,7 +170,7 @@ a[href^="https"] {
   // **jedes** `p` -Element, das einem `img` -Element folgt  
   // und `in der selben verschachtelten Ebene` steckt. Bzw. `gleiches Parent-Element` hat
 
-```
+```css
 img ~ p {
 }
 ```
@@ -181,7 +181,7 @@ img ~ p {
   // **jedes _erste_** `p` -Element, das einem `img` -Element folgt  
   // und `in der selben verschachtelten Ebene` steckt. Bzw. `gleiches Parent-Element` hat
 
-```
+```css
 img + p {
 }
 ```

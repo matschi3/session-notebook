@@ -1,6 +1,6 @@
 # GIT (cli + remote)
 
-## GIT cli
+## GIT cli (CommandLineInterface)
 
 `cd path/to/folder` navigate to your folder  
 `git init` initializes / creates a **local repository**
@@ -12,3 +12,5 @@
 
 |untracked||
 |modified|tracked|
+
+![GIT cli](./img/git-cli.png)
