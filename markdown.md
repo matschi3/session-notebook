@@ -20,6 +20,8 @@ Der Markdown(.md)-Syntax ermöglicht das schreiben von formatiertem Text, welche
 | `![Bildbeschreibung](img-url)`         | Bild                                                         |
 | `` `inline Codeblock` ``               | `inline Codeblock`                                           |
 | ` ``` Codeblock ``` `                  | `Codeblock`                                                  |
+| ` ```html Codeblock ``` `              | `Codeblock` für html oder andere                             |
+| ` ```css Codeblock ``` `               | `Codeblock` für CSS oder andere                              |
 | `[ _ ][ _ ]`                           | Zeilenumbruch mit 2 Leerstellen am Ende der Zeile            |
 | `[^1], [^2], ...`                      | Fußnoten // auch Namen möglich, werden in Zahlen umgewandelt |
 
