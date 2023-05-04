@@ -69,7 +69,7 @@ GitHub** and execute them in your local project folder.
 **Example:**
 
 ```shell
-git remote add origin git@github.com:GitHubUsername/repository-name.git
+git remote add origin git@github.com:GitHubUser/repository-name.git
 git branch -M main
 git push -u origin main
 ```
