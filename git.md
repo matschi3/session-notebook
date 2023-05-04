@@ -66,7 +66,8 @@
 >
 > > - `git log --oneline` to get commit's ID
 > > - double-check the next one!
-> > - `git reset 89f6c3e --hard` to **hard reset** to specific commit
+> > - `git reset <commitID> --hard` to **hard reset** to specific commit  
+> >   [Git reverting to previous commit (FreeCodeCampNews)](https://www.freecodecamp.org/news/git-reverting-to-previous-commit-how-to-revert-to-last-commit/)
 
 ---
 
@@ -76,6 +77,14 @@ When working on a project, especially as a team, you want to work on features in
 
 A branch lets you split from the main line of development. The new branch shares a part of its commit history with the main branch. At a certain commit the new branch branches off and the commit histories differ.  
 ![GIT branch](./img/git-branch.png)
+
+> 🧑‍💻 Workflow:
+>
+> 1. `git switch -c <name>` **create** a new **feature branch**
+>    > `git switch <name>` or **switch** if it already exists
+> 2. `git add <file>` **add** every file you want to commit to **staged** files
+> 3. finish work on feature branch, test, have others review
+> 4. In `main` branch: `git merge <name>` with **name of featue branch** to **merge** into main branch
 
 ---
 
