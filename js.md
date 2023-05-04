@@ -211,17 +211,15 @@ value you want to store, JavaScript detects this automatically.
 
 There are 7 primitive data types:
 
-| type        | represents                                                                                                                  |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `string`    | a sequence of characters: "abcd"                                                                                            |
-| `number`    | a number: 1234                                                                                                              |
-| `boolean`   | a binary statement, can be `true` or `false`                                                                                |
+| type        | represents                                                                                                                  | syntax                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `string`    | a sequence of characters: "abcd"                                                                                            | `const varName = "hello you.";` `const varName = "12345";` |
+| `number`    | a number: 1234                                                                                                              | `const varName = 12345;` `const varName = 0.123;`          |
+| `boolean`   | a binary statement, can be `true` or `false`                                                                                | `const varName = true;` or `const varName = false;`        |
 | `null`      | represents "nothing", is typically set by developers                                                                        |
 | `undefined` | represents the state of "not existing". Anything not specified or not found in JavaScript defaults to the value `undefined` |
 | `BigInt`    | uncommon, used for integers larger than 9007199254740991                                                                    |
 | `Symbol`    | uncommon, used for creating unique elements                                                                                 |
-
-❗️ vlt noch ne beispiel-spalte hinzufügen
 
 ---
 
@@ -230,14 +228,14 @@ There are 7 primitive data types:
 As a programmer you sometimes have to use mathematical operations to calculate certain widths or
 positions of elements. Operators calculate values based on one or two expressions.
 
-| operator | effect                                                                                       |
-| -------- | -------------------------------------------------------------------------------------------- |
-| `+`      | adds two numbers together.                                                                   |
-| `-`      | subtracts two numbers                                                                        |
-| `*`      | multiplies two numbers                                                                       |
-| `/`      | divides two numbers                                                                          |
-| `**`     | potentiates two numbers: `2 ** 4 → 16`                                                       |
-| `%`      | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 → 2`. |
+| operator | effect                                                                                       | syntax                     |
+| -------- | -------------------------------------------------------------------------------------------- | -------------------------- |
+| `+`      | adds two numbers together.                                                                   | `result = vari1 + vari2;`  |
+| `-`      | subtracts two numbers                                                                        | `result = vari1 - vari2;`  |
+| `*`      | multiplies two numbers                                                                       | `result = vari1 * vari2;`  |
+| `/`      | divides two numbers                                                                          | `result = vari1 / vari2;`  |
+| `**`     | potentiates two numbers: `2 ** 4 → 16`                                                       | `result = vari1 ** vari2;` |
+| `%`      | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 → 2`. | `result = vari1 % vari2;`  |
 
 > 💡 Operator Precedence  
 > In maths, some operators have a higher precedence than others. This means that they are performed
