@@ -1,4 +1,6 @@
-# CSS Basics
+# CSS
+
+## CSS Basics
 
 ![CSS Ruleset](./img/css_ruleset.png)
 
@@ -23,7 +25,7 @@ h3 {
 
 ---
 
-## Linking Stylesheets
+### Linking Stylesheets
 
 Simple implementation of seperated `styles.css`-file in `<head>` of the HTML document, so that styles get loaded into the browser before the Content does.
 
@@ -39,13 +41,19 @@ Simple implementation of seperated `styles.css`-file in `<head>` of the HTML doc
 
 ---
 
-## Box Model
+### multiple Stylesheets / Structure of documents
 
 > ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
 
 ---
 
-## Inline and Block/Box elements
+### Box Model
+
+> ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
+
+---
+
+### Inline and Block/Box elements
 
 - **inline elements** nehmen den Platz ein, _den sie selbst benötigen_.  
    // platziert **in** text lines
@@ -56,7 +64,7 @@ Simple implementation of seperated `styles.css`-file in `<head>` of the HTML doc
 
 ---
 
-## Selectors
+### Selectors
 
 - **universal** -Selektor  
   // wählt alles (kann durch **Combinators** gezielt eingesetzt werden):
@@ -71,6 +79,8 @@ Simple implementation of seperated `styles.css`-file in `<head>` of the HTML doc
 > The default value is `content-box`. The values of `width` and `height` set the size of the "content
 > box". With the value `border-box`, the size of the "border box" is set instead.  
 > Now, the `width` property defines the size of the border box, padding and border width are subtracted to calculate the available space for the content.
+
+---
 
 - **element**/type -Selektor  
   // wählt HTML Elemente anhand ihres Typen:
@@ -130,21 +140,18 @@ a[href^="https"] {
 > .class-Selektor hauptsächlich benutzen  
 > #ID-Selektor **nicht** für styling
 
+> 💡 Selector hierachy:
+> ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
+
 ---
 
-## Pseudo Selectors
+### Pseudo Selectors
 
 > ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
 
 ---
 
-## Selektor-Hierachy
-
-> ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
-
----
-
-## Combinators
+### Combinators
 
 - **descendant** -Combinator `"  "`  
   // jedes `p`-Element, verschachtelt in `allen Ebenen` von `.class`
@@ -185,5 +192,23 @@ img ~ p {
 img + p {
 }
 ```
+
+---
+
+## CSS Positioning
+
+> ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
+
+---
+
+### Flexbox
+
+> ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
+
+---
+
+### Grid
+
+> ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
 
 ---
