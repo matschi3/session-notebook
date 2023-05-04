@@ -44,10 +44,15 @@
 
 ![GIT cli](./img/git-cli.png)
 
-> 💡 commits  
-> **snapshot** of repository **at a specific point in time**, similar to hitting **save button** in games, have a message to let other developers know about changes being made
+---
 
-> Good commit messages:
+### commits
+
+**snapshot** of repository **at a specific point in time**, similar to hitting **save button** in games, have a message to let other developers know about changes being made
+
+![GIT commit](./img/git-commit.png)
+
+> 💡 Good commit messages:
 >
 > - short and descriptive
 > - always use english
@@ -56,13 +61,29 @@
 > - don't end with a period
 > - in doubt explain why you did something and not how
 
+> ❗️ **Don't do that**, exept there is no other way: ❗️  
+> reset to a _previous_ commit:
+>
+> > - `git log --oneline` to get commit's ID
+> > - double-check the next one!
+> > - `git reset 89f6c3e --hard` to **hard reset** to specific commit
+
+---
+
+### branches
+
+When working on a project, especially as a team, you want to work on features independently, so they never affect anyone else's work. Git offers us branches to keep our current work away from a teams common codebase until completion.
+
+A branch lets you split from the main line of development. The new branch shares a part of its commit history with the main branch. At a certain commit the new branch branches off and the commit histories differ.  
+![GIT branch](./img/git-branch.png)
+
 ---
 
 ## GIT remote (GitHub, GitLab, ...)
 
 ### Connecting your local repository to a new remote repository
 
-The first thing you need to do is create a new empty remote repository on GitHub. You will then see
+The first thing you need to do is create a new empty remote repository on **GitHub**. You will then see
 some hints e.g. "...or push an existing repository from the command line". **Copy the commands from
 GitHub** and execute them in your local project folder.
 
@@ -70,7 +91,7 @@ GitHub** and execute them in your local project folder.
 
 ```shell
 git remote add origin git@github.com:GitHubUser/repository-name.git
-git branch -M main
+git branch -M main # optional; some versions still use master as main
 git push -u origin main
 ```
 
