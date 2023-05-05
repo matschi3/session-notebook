@@ -510,9 +510,9 @@ body {
 
 You can use media queries to show different images based on the screen size.
 
-The html `picture` element allows you to define multiple `source` elements for an image. The browser
-will choose the _first_ source that matches the given media query. If no `source` element matches,
-the browser will use the `img` element as a fallback.
+> 💡 The html **`picture` element** allows you to define multiple `source` elements for an image. The browser
+> will choose the _first_ source that matches the given media query. If no `source` element matches,
+> the browser will use the `img` element as a fallback.
 
 The `img` element is required, so that there is always a fallback.
 
