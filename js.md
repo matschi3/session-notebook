@@ -32,8 +32,6 @@ console.error("Error!"); // logs as error into console
 
 ---
 
----
-
 ### selecting HTML Elements: `querySelector()`
 
 before adding interactivity, we need to select the necessary HTML-Elements:
@@ -130,17 +128,7 @@ main.classList.toggle("page--primary");
 
 ---
 
-## Resources
-
-### Connect a JavaScript file
-
-[The Script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
-
-### Hello World
-
-[Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
-
-### Selecting HTML Elements
+#### Resources - basics
 
 [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 
@@ -150,17 +138,11 @@ main.classList.toggle("page--primary");
 
 [data-\* attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 
-### Add Interaction
-
 [.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
 [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events#event_listing)
 
-### Add/remove & toggle classes
-
 [classList](https://developer.mozilla.org/de/docs/Web/API/Element/classList)
-
----
 
 ---
 
@@ -275,10 +257,6 @@ This is `1` for all **odd** numbers, because after this division you have always
 
 ---
 
-### ❗️ checked bis hier
-
----
-
 ### Assignment Operators
 
 You already know the default assignment operator `=`. This operator just assigns the value on the
@@ -296,8 +274,8 @@ increasing a variable by a fixed value.
 
 ### Type Coersion
 
-When you use an operator with a variable with an unfitting type, JavaScript will automatically
-convert (coerse) this variable into a fitting type. For example:
+When you use an operator with a variable with an **unfitting type**, JavaScript will **automatically**
+**convert (coerse)** this variable into a fitting type. For example:
 
 ```js
 4 / "2"; // → 4 / 2
@@ -310,6 +288,8 @@ This is also true for boolean operators which we will cover in a later session.
 > `"ab"`. When 'adding' a number and a string, the number is converted to a string: `"a" + 6` → `"a6"`.
 > Make sure that both variables are numbers if you want to add them.
 > 📙 Read more about [**Type coersion** in the mdn](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion).
+
+---
 
 ### Number Systems
 
@@ -325,10 +305,12 @@ and 1. You don't have to learn these systems by heart, but it is good if you hea
 
 ---
 
-#### Resources
+#### Resources - variables and numbers
 
 - [Operator Precedence in the mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 - [Type coersion in the mdn](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+
+---
 
 ---
 
@@ -536,18 +518,20 @@ JavaScript tries to coerce the compared values into the same type. And just like
 
 ---
 
-### Resources
-
-### Operators
+#### Resources - conditions and boolean
 
 [MDN Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators)
 
 [MDN Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators)
 
-### if / else statements
-
 [MDN about if else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 
-### Ternary Operator
-
 [MDN Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+
+---
+
+---
+
+## JavaScript -
+
+###
