@@ -29,7 +29,7 @@ Der Markdown(.md)-Syntax ermöglicht das schreiben von formatiertem Text, welche
 
 ## Tabellen
 
-Es müssen mindestens **drei Kopfspalten** vorhanden sein.  
+Es müssen mindestens **drei `---`** pro Spalte vorhanden sein, welche durch **`|`** getrennt werden.  
 **Doppelpunkte (:)** werden benutzt um Spalten anzuordnen.
 
 ```
