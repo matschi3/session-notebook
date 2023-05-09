@@ -25,7 +25,7 @@
 | git switch branchname                                                   | zu anderem branch wechseln                      |
 | git switch -c branchname                                                | neuen branch erstellen                          |
 
-## GIT cli (CommandLineInterface)
+### GIT cli (CommandLineInterface)
 
 `cd path/to/folder` navigate to your folder  
 `git init` initializes / creates a **local repository**
@@ -125,9 +125,17 @@ git clone <url>
 
 ---
 
-## Resources
+#### Resources
 
 - [Connect with SSH Docs on GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
 - [Git SCM](https://git-scm.com/)
 - [Git book](https://git-scm.com/book/en/v2)
 - [Git Cheatsheet](https://training.github.com/downloads/github-git-cheat-sheet/)
+
+---
+
+---
+
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->

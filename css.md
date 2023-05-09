@@ -2,6 +2,8 @@
 
 ## CSS Basics
 
+<details>
+<summary>Basics | LinkingStylesheet | multiple Stylesheets | BoxModel | Inline/Block | Selector | PseudoSelector | Combinator</summary>
 ![CSS Ruleset](./img/css_ruleset.png)
 
 | Bereich     | Beschreibung                                             |
@@ -195,7 +197,17 @@ img + p {
 
 ---
 
-### CSS Positioning
+---
+
+</details>
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+## CSS Positioning
+
+<details>
+<summary>Positioning | FlexBox | Grid</summary>
 
 > ❗️ Hier fehlt noch ein Teil, der bald kommt und an diese Stelle gehört ❗️
 
@@ -215,7 +227,15 @@ img + p {
 
 ---
 
+</details>
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
 ## CSS Responsive
+
+<details>
+<summary>MobileFirst | ResponsiveUnits | MediaQueries | MediaTypes | ScreenSize | Orientation | Pointer | PixelDensity | ColorScheme | ReducedMotion | HighContrast | CombiningMediaFeatures | Testing | Simulating | CommonBreakpoints | DifferentImages</summary>
 
 ### Mobile First Design
 
@@ -506,7 +526,7 @@ body {
 
 ---
 
-## Showing different images based on media queries
+### Showing different images based on media queries
 
 You can use media queries to show different images based on the screen size.
 
@@ -535,7 +555,7 @@ The `img` element is required, so that there is always a fallback.
 
 ---
 
-## Resources
+#### Resources
 
 - [Using Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 - [Responsive Design on mdn](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
@@ -549,3 +569,8 @@ The `img` element is required, so that there is always a fallback.
 ---
 
 ---
+
+</details>
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->

@@ -2,6 +2,9 @@
 
 ## How the web works
 
+<details>
+<summary>HowWebWorks</summary>
+
 The world wide web is a network of computers that can exchange information with each other. There
 are many different protocols that define the rules on how machines communicate. Browsers use HTTP
 (Hypertext Transfer Protocol) to communicate with web servers.
@@ -22,7 +25,17 @@ are many different protocols that define the rules on how machines communicate. 
 
 ---
 
+---
+
+</details>
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
 ## HTML basics
+
+<details>
+<summary>HTML Basics | TagAttributes | Layout | CommonElements | Structure | SemanticElements | Nesting | Emmet</summary>
 
 HTML (Hyper Text Markup Language) is used to express text in a structured way. HTML tags indicate
 what kind of element is displayed on the website. For example, a headline is written like this:
@@ -115,7 +128,7 @@ element, which consists of two main parts:
 
 ---
 
-## Structuring a Website
+### Structuring a Website
 
 Developers have two main tools to express a meaningful structure in a website:
 
@@ -178,7 +191,7 @@ The following cases are typical examples of nested elements:
 Below is a sketch of how semantic elements can be nested in a web page.<br><br>
 <img src="./assets/sectioning-elements.png" width=700 />
 
-## Emmet
+### Emmet
 
 Visual Studio Code has a useful tool called Emmet which lets you autocomplete a lot of code by just
 typing certain snippets and pressing the <kbd>Tab</kbd> key afterwards. Try these snippets inside an
@@ -194,10 +207,19 @@ HTML file and see what happens:
 
 ---
 
-## Resources
+#### Resources
 
 - [MDN: Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 - [MDN: Getting started with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [MDN: HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [MDN: Semantic elements: Glossary](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
 - [MDN: HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
+
+---
+
+---
+
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+</details>

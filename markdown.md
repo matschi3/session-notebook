@@ -25,6 +25,8 @@ Der Markdown(.md)-Syntax ermöglicht das schreiben von formatiertem Text, welche
 | `[ _ ][ _ ]`                           | Zeilenumbruch mit 2 Leerstellen am Ende der Zeile            |
 | `[^1], [^2], ...`                      | Fußnoten // auch Namen möglich, werden in Zahlen umgewandelt |
 
+<details><summary>mehr...</summary> Es kann auch ein `< details >` -Bereich erstellt und mit einer `< summary >`versehen werden.  </details>
+
 ---
 
 ## Tabellen
@@ -62,7 +64,7 @@ Markdown | weniger | schön
 
 ---
 
-## Quellen und weiterführende Links
+#### Quellen und weiterführende Links
 
 - [Handout](https://github.com/neuefische/muc-web-23-3/blob/main/sessions/github-and-markdown/github-and-markdown.md)
 - [Challanges](https://github.com/neuefische/muc-web-23-3/blob/main/sessions/github-and-markdown/challenges-github-and-markdown.md)
