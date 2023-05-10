@@ -1262,12 +1262,12 @@ form.addEventListener("submit", (event) => {
 });
 ```
 
-Note that
-
-- `event.target.elements` is stored in the variable `formElements` for better readability,
-- `firstName` is the string value of the corresponding `name` attribute, as in
-  `<input name="firstName"/>`, and
-- `firstName.value` returns the user input for the field with `name="firstName"`.
+> 💡 Note that:
+>
+> - `event.target.elements` is stored in the variable `formElements` for better readability,
+> - `firstName` is the string value of the corresponding `name` attribute, as in
+>   `<input name="firstName"/>`, and
+> - `firstName.value` returns the user input for the field with `name="firstName"`.
 
 ---
 
