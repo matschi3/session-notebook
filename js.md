@@ -986,11 +986,13 @@ textInput.addEventListener("input", () => {
 <!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
 <!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
 
-## Arrays
+## Arrays [ ] + Objects { }
 
 <details><summary>CommonArray Attributes+Methods | Objects | NestedObjects+Arrays | </summary>
 
-## Arrays
+## Arrays [ ] + Objects { }
+
+### Array [ ]
 
 Arrays are a structured data type which can store multiple values in one variable.
 
@@ -1000,7 +1002,7 @@ You can declare an array using `[]` square brackets (array literals):
 const shoppingList = ["apple", "tomato"];
 ```
 
-Each item in the array has an index, which starts at 0. You can access individual items using the
+Each item in the array has an **index**, which **starts at 0**. You can access individual items using the
 bracket notation and the item's index:
 
 ```js
@@ -1008,7 +1010,7 @@ shoppingList[0]; // "apple"
 shoppingList[1]; // "tomato"
 ```
 
-Arrays can hold any type of value, even another array. This is called a nested array. The values of
+Arrays can hold any type of value, even another array. This is called a **nested array**. The values of
 nested arrays can be accessed by choosing the index of the nested array first and then stating the
 index of the element inside the nested array.
 
@@ -1017,7 +1019,9 @@ const nestedArray = ["a", 1, ["a", "new", "sentence"], false];
 nestedArray[2][1]; // "new"
 ```
 
-You can overwrite individual values in an array:
+> 🧩 BestPractise: Keep it simple. Better one type of value per Array, except you need it. e.g. Array inside Array
+
+You can **overwrite** individual **values** in an array:
 
 ```js
 const shoppingList = ["apple", "tomato"];
@@ -1025,7 +1029,7 @@ shoppingList[0] = "banana";
 shoppingList; // ["banana","tomato"];
 ```
 
-### Common Array Attributes and Methods
+### Common Array Attributes and **Methods**
 
 | Attribute / Method       | Effect                                           |
 | ------------------------ | ------------------------------------------------ |
@@ -1040,9 +1044,11 @@ shoppingList; // ["banana","tomato"];
 > [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)
 > for more information.
 
+> 💡 Für ein **Array** kann man die Variable `const` verwenden, obwohl `const` normalerweise eine Wert-veränderung ausschließt. Der Variablen ist ein Array zugewiesen, _dessen Inhalt_ wir verändern und kein spezifischer Wert, den wir verändern
+
 ---
 
-### Objects
+### Objects { }
 
 Objects are a structured data type, which couple their values not to an index, but to a unique key.
 
@@ -1084,27 +1090,27 @@ const person = {
 };
 ```
 
-Nested values can be accessed by chaining the dot notation and/or the bracket notation together.
+Nested values can be **accessed by** chaining the **dot notation** and/or the bracket notation together.
 
 ```js
 person.address.street; // "Berliner Str."
 person.address["city"]; // "Leipzig"
 ```
 
-You can change values of object properties by reassigning them using the dot or bracket notation:
+You can **change values** of object properties by reassigning them using the dot or bracket notation:
 
 ```js
 person.name = "Max Paddington";
 person["age"] = 33;
 ```
 
-You can add new properties in the same way:
+You can **add new** properties in _the same way_:
 
 ```js
 person.score = 15;
 ```
 
-You can delete properties using the delete keyword:
+You can **delete properties** using the delete keyword:
 
 ```js
 delete person.score;
@@ -1135,11 +1141,27 @@ const user = {
 };
 ```
 
-You can access elements via chained dot / bracket notation:
+You can access elements via **chained** dot / bracket notation:
 
 ```js
 peopleArray[1].name; // "Alex"
 user.shoppingCart[0]; // "tomato"
+```
+
+---
+
+Werte-benennung kann auch als **string** vorgefunden werden. Wir greifen wie folgt auf den Wert zu:
+
+```js
+const person = {
+  name: "Marc",
+  age: 18,
+  "another-key": "lorem", // key-name als String?
+  anotherKey: "value",
+};
+person["another-key"] = "Peter"; // wird über key-name aufgerufen!
+
+person.name = "Oskar"; // normal so
 ```
 
 ---
