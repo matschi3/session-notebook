@@ -1150,19 +1150,19 @@ user.shoppingCart[0]; // "tomato"
 
 ---
 
-Werte-benennung kann auch als **string** vorgefunden werden. Wir greifen wie folgt auf den Wert zu:
-
-```js
-const person = {
-  name: "Marc",
-  age: 18,
-  "another-key": "lorem", // key-name als String?
-  anotherKey: "value",
-};
-person["another-key"] = "Peter"; // wird über key-name aufgerufen!
-
-person.name = "Oskar"; // normal so
-```
+> 💡 **KEY** kann auch als ein **string** vorgefunden werden. Wir müssen durch **bracket notation** darauf zugreifen, da **dot notation** nicht mit _Leerstellen_ umgehen kann
+>
+> ```js
+> const person = {
+>   name: "Marc",
+>   age: 18,
+>   "another key": "lorem", // KEY als String?
+>   anotherKey: "value",
+> };
+>
+> person["another key"] = "Peter"; // über KEY mit bracket-notation aufgerufen!
+> person.name = "Oskar"; // hier dot-notation
+> ```
 
 ---
 
