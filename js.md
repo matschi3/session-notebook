@@ -1056,9 +1056,9 @@ You can declare an object using `{}` curly brackets (object literals):
 
 ```js
 const person = {
-  name: "Max Paddington",
-  age: 21,
-  isStudent: false,
+  name: "Max Paddington", // KEY -> name   // VALUE -> "Max Peddington"
+  age: 21, // KEY -> age   // VALUE -> 21
+  isStudent: false, // KEY -> isStudent   // VALUE -> false
 };
 ```
 
