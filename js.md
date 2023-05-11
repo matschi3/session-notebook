@@ -62,7 +62,13 @@ const article = document.createElement("article");
 const button = document.createElement("button");
 ```
 
-ist dann erstmal in der variablen gespeichert
+ist dann erstmal in der variablen gespeichert  
+jetzt:  
+`.classList.add()`  
+`.textContent`
+`container` `.append()`
+
+---
 
 ### `.append`
 
@@ -72,6 +78,16 @@ article.append(button); // placing the created button into the article
 ```
 
 ---
+
+### prevent default
+
+```js
+const form = document.querySelector('[data-js="form"]');
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+});
+```
 
 </details>
 
