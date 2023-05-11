@@ -67,6 +67,7 @@ jetzt:
 `.classList.add()`  
 `.textContent`
 `container` `.append()`
+`.innerHTML`
 
 ---
 
@@ -1622,7 +1623,7 @@ button.textContent = "Click me!";
 
 ### `.innerHTML`
 
-> ❗️ innerHTML can be unsafe when user input is passed into the template literal. Use it with
+> ❗️ ❌ ❗️ innerHTML can be unsafe when user input is passed into the template literal. Use it with
 > caution. Read
 > [this article](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#replacing_the_contents_of_an_element)
 > for more information about it.
