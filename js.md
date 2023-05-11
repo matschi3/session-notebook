@@ -53,6 +53,26 @@ button.addEventListener("click", () => {
 });
 ```
 
+---
+
+### `.createElement`
+
+```js
+const article = document.createElement("article");
+const button = document.createElement("button");
+```
+
+ist dann erstmal in der variablen gespeichert
+
+### `.append`
+
+```js
+document.body.append(article); // placing the created article at the end of the body
+article.append(button); // placing the created button into the article
+```
+
+---
+
 </details>
 
 <!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
