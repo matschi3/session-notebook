@@ -65,9 +65,10 @@ const button = document.createElement("button");
 ist dann erstmal in der variablen gespeichert  
 jetzt:  
 `.classList.add()`  
-`.textContent`
-`container` `.append()`
-`.innerHTML`
+`.textContent`  
+`container` `.append()`  
+`.innerHTML`  
+`.setAttribute()`
 
 ---
 
