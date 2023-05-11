@@ -1551,7 +1551,8 @@ send, the input field is cleared and re-focussed, so users can write the next me
 The **Document Object Model** is a representation of the HTML document. Each HTML Tag is modelled as
 a **node** in a tree structure, which shows how HTML elements are nested. A computer program such as
 your JavaScript file can access and manipulate the HTML website by changing the DOM via the
-`document` object. ![the DOM](assets/DOM.png)
+`document` object.  
+![the DOM](/img/dom-create-element.png)
 
 ### `document.createElement`
 
