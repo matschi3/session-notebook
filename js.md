@@ -1179,7 +1179,7 @@ user.shoppingCart[0]; // "tomato"
 
 ## JS Forms
 
-<details><summary>ListeningToSubmit | Events | AccessInteractive | UsingInput | ReadCheckbox</summary>
+<details><summary>ListeningToSubmit | Events | AccessInteractive | UsingInput | ReadCheckbox | htmlFormValidation | inputEvent | resettingForms</summary>
 
 ## JS Forms
 
@@ -1194,6 +1194,8 @@ writing _any_ JavaScript):
 
 None of that is useful, if we want to do something with the submitted data in our frontend code. You
 can prevent this behavior with a method called `.preventDefault()`.
+
+> 💡 You can inspect this behaviour inside your dev browser tool -> Network
 
 ---
 
@@ -1214,6 +1216,8 @@ form.addEventListener("submit", (event) => {
 
 By calling `event.preventDefault()` the browser will not perform a GET request that would cause the
 page to reload on submit.
+
+> 💡 Durch das submitten unserer Form wird ein submit **event** ausgelößt
 
 ---
 
@@ -1314,10 +1318,287 @@ console.log(formElements.colorBlue.checked); // output: true or false
 console.log(formElements.colorBlue.value); // output (always): blue
 ```
 
+> 💡 `Zahlenwerte` aus Formularen werden als `"Strings"` ausgegeben und müssen vor weiterbenutzen als `Zahl` in eine solche umgewandelt (ge-parsed) werden.  
+> `parseInt(stringValue)`  
+> [parseInt // radix Info @ w3schools](https://www.w3schools.com/jsref/jsref_parseint.asp#:~:text=The%20parseInt%20method%20parses%20a,omitted%2C%20JavaScript%20assumes%20radix%2010)
+
+---
+
+### HTML Form Validation
+
+Before submitting a form, it is important to ensure all required form fields are filled out, in the
+correct format. This is called **client-side form validation**.
+
+HTML provides several form field attributes to enable validation features build into the browser.
+
+| Attribute                 | Description                                                                                                                                        |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `required`                | if present, a form field needs to be filled in before the form can be submitted                                                                    |
+| `minlength` / `maxlength` | minimum and maximum length of textual data (strings)                                                                                               |
+| `min` / `max`             | minimum and maximum values of numerical input types                                                                                                |
+| `type`                    | each input type has its own prefigured validation (like `email`)                                                                                   |
+| `pattern`                 | [a regular expression pattern](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) the entered data needs to follow |
+
+The following input field is valid if its value exists and it is a string between 3 and 30
+characters:
+
+```html
+<input
+  id="input-name"
+  type="text"
+  name="name"
+  minlength="3"
+  maxlength="30"
+  required
+/>
+```
+
+> ❗️ If the `required` attribute is omitted, the field is valid if it is empty or has a content
+> between 3 and 30 characters, but invalid if 1 or 2 characters are entered.
+
+`type="email"` will check if the input is a valid email address.
+
+```html
+<input id="input-email" type="email" name="email" />
+```
+
+---
+
+### The `input` Event
+
+Occasionally, you may want to do something if the value of a single field changes even before the
+form is submitted.
+
+The `input` event is fired every time when the value of a form field has been changed. For example,
+a `<textarea />` will fire this event with every keystroke.
+
+```js
+const messageField = document.querySelector('[data-js="message"]');
+
+messageField.addEventListener("input", (event) => {
+  console.log(event.target.value);
+});
+```
+
+> ❗️ Don't confuse the `input` event with the `change` event, which is only fired after a field's
+> content has been committed by the user by pressing enter or moving the focus to the next field.
+
+---
+
+### Focus Input Fields
+
+You can focus an input field with the `.focus()` method. This can be used to improve the user
+experience after submitting a form.
+
+```js
+const messageField = document.querySelector('[data-js="message"]');
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // [...] handle form data
+  messageField.focus();
+});
+```
+
+Instead of querying the input element using `querySelector`, it can also be obtained via the
+`event.target.elements` collection:
+
+```js
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // [...] handle form data
+  event.target.elements.message.focus();
+});
+```
+
+This will focus a form field with the attribute `name="message"`.
+
+---
+
+### Resetting Forms
+
+You can reset all form fields to their default value with the `.reset()` method.
+
+```js
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // [...] handle form data
+  event.target.reset();
+});
+```
+
+This often comes in handy in combination with `.focus()`. Think of a chat: After the message was
+send, the input field is cleared and re-focussed, so users can write the next message.
+
 ---
 
 #### Resources
 
+- [MDN web docs: Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
+- [MDN web docs: input event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
 - [Event interface](https://developer.mozilla.org/en-US/docs/Web/API/Event#properties)
+
+</details>
+
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
+## JS createElement
+
+<details><summary>TheDOM | createElement | elementProperties+Methods | innerHTML | resettingElementContent</summary>
+
+## JS createElement
+
+### The DOM
+
+The **Document Object Model** is a representation of the HTML document. Each HTML Tag is modelled as
+a **node** in a tree structure, which shows how HTML elements are nested. A computer program such as
+your JavaScript file can access and manipulate the HTML website by changing the DOM via the
+`document` object. ![the DOM](assets/DOM.png)
+
+### `document.createElement`
+
+You can generate an HTML element with JavaScript by using the `document.createElement` method. It
+expects the type of element as an argument.
+
+```js
+const article = document.createElement("article");
+const button = document.createElement("button");
+```
+
+After generating an element, you need to place the element into the DOM. For this, you can use the
+`.append` method. It places the element as the **last child** into the respective element.
+
+```js
+document.body.append(article); // placing the created article at the end of the body
+article.append(button); // placing the created button into the article
+```
+
+The result looks like this:
+
+```html
+<body>
+  ...
+  <article>
+    <button></button>
+  </article>
+</body>
+```
+
+---
+
+### Element Properties and Methods
+
+As well as with queried HTML elements (via `querySelector`), we can add classes, event listeners and
+more to the created HTML elements.
+
+```js
+article.classList.add("card");
+
+button.addEventListener("click", () => {
+  console.log("It works!");
+});
+```
+
+The text of an element can be changed by reassigning the `.textContent` property:
+
+```js
+button.textContent = "Click me!";
+```
+
+### Common Element Properties and Methods
+
+| Property          | Effect                                                             |
+| ----------------- | ------------------------------------------------------------------ |
+| `classList`       | add, toggle or remove classes from element                         |
+| `textContent`     | get or set text inside element                                     |
+| `style`           | define inline style, e.g. `element.style.backgroundColor = "red" ` |
+| `hidden`          | boolean whether element is hidden or not                           |
+| `focus()`         | focusses the element on the website                                |
+| `hasAttribute()`  | returns true if the element has the given attribute                |
+| `querySelector()` | returns the first child that matches the given CSS selector        |
+
+> 💡 You can assign HTML attributes by using the element properties. Go to the
+> [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element#properties) for a
+> comprehensive list of element properties.
+
+---
+
+### `.innerHTML`
+
+> ❗️ innerHTML can be unsafe when user input is passed into the template literal. Use it with
+> caution. Read
+> [this article](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#replacing_the_contents_of_an_element)
+> for more information about it.
+
+The `innerHTML` property can be used to create the entire html layout of an element by passing the
+html code as a string. By using **template literals** the content of the html can be dynamically
+created.
+
+```js
+const cityName = "Lissabon";
+
+article.innerHTML = `
+	<h2> ${cityName} </h2>
+	<p class="card__content">
+		${cityName} is a very beautiful city in Portugal. 
+		Go there and enjoy the stay!
+	</p>
+	<button type='button' class="card__booking-button"> 
+		Book Trip 
+	</button>
+`;
+```
+
+This HTML code is rendered then **inside** the article element:
+
+```html
+<body>
+  ...
+  <article>
+    <h2>Lissabon</h2>
+    <p class="card__content">
+      Lissabon is a very beautiful city in Portugal. Go there and enjoy the
+      stay!
+    </p>
+    <button type="button" class="card__booking-button">Book Trip</button>
+  </article>
+</body>
+```
+
+### Resetting Element Content
+
+`.innerHTML` can also be used to **reset** the content of an element, e.g. a container:
+
+HTML before:
+
+```html
+<ul data-js="cardContainer">
+  <li class="card">...</li>
+  <li class="card">...</li>
+  <li class="card">...</li>
+</ul>
+```
+
+By setting the innerHTML to an empty string, the content is deleted:
+
+```js
+const cardContainer = document.querySelector('[data-js="cardContainer"]');
+cardContainer.innerHTML = "";
+```
+
+The result:
+
+```html
+<ul data-js="cardContainer"></ul>
+```
+
+---
+
+#### Resources
+
+[MDN Docs about element Properties](https://developer.mozilla.org/en-US/docs/Web/API/Element#properties)  
+[MDN Docs about securtiy risks with innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#replacing_the_contents_of_an_element)
 
 </details>
