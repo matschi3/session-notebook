@@ -41,6 +41,8 @@ const button = document.querySelector('[data-js="button"]');
 button.addEventListener("click", () => {});
 ```
 
+> 💡 Useful eventListener events: `"click"`, `"input"`, `"submit"`
+
 ---
 
 ### `.classList.`
@@ -69,6 +71,11 @@ jetzt:
 `container` `.append()`  
 `.innerHTML`  
 `.setAttribute()`
+
+---
+
+`form.reset();`  
+`passwordForm.focus();`
 
 ---
 
