@@ -1,5 +1,64 @@
 # JavaScript
 
+### JS CheatSheet
+
+<details><summary></summary>
+
+### JS CheatSheet
+
+### connect script
+
+```html
+<head>
+  ...
+  <script src="./js/index.js" defer></script>
+</head>
+<body>
+  ...
+</body>
+```
+
+---
+
+### `document` `.querySelector()`
+
+```html
+<body>
+  <main class="main" id="main" data-js="main">...</main>
+</body>
+```
+
+```js
+const mainElement = document.querySelector('[data-js="main"]');
+```
+
+---
+
+### `.addEventListener`
+
+```js
+const button = document.querySelector('[data-js="button"]');
+button.addEventListener("click", () => {});
+```
+
+---
+
+### `.classList.`
+
+```js
+const main = document.querySelector('[data-js="main"]');
+const button = document.querySelector('[data-js="button"]');
+button.addEventListener("click", () => {
+  main.classList.add("page--primary"); // add|remove|toggle|...
+});
+```
+
+</details>
+
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+<!-- ---------- ////////// ---------- ---------- ////////// ---------- -->
+<!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
 ## JS Basics
 
 <details>
@@ -1460,7 +1519,7 @@ your JavaScript file can access and manipulate the HTML website by changing the 
 ### `document.createElement`
 
 You can generate an HTML element with JavaScript by using the `document.createElement` method. It
-expects the type of element as an argument.
+expects the type of element **as an argument**.
 
 ```js
 const article = document.createElement("article");
