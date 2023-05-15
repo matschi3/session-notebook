@@ -98,6 +98,17 @@ form.addEventListener("submit", (event) => {
 });
 ```
 
+---
+
+### getting All data out of Form
+
+```js
+const formData = new FormData(event.target);
+const data = Object.fromEntries(formData);
+
+const varName = data.formQuestion; // save value of  'formQuestion' in varName
+```
+
 </details>
 
 <!-- ---------- ---------- ---------- ---------- ---------- ---------- -->
@@ -113,8 +124,8 @@ form.addEventListener("submit", (event) => {
 
 ### connect a JavaScript file
 
-The `<script>`-Tag has two attributes:  
-`src="./index.js"` sets the URL to Javascript file _index.js_  
+The `<script>`-Tag has two attributes:
+`src="./index.js"` sets the URL to Javascript file _index.js_
 `defer` tells browser to **delay the loading of script** until _all HTML elemens_ are loaded
 
 ```html
