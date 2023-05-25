@@ -48,6 +48,43 @@ etc.) as well as a great developer experience (declaritive code is much easier t
 
 ---
 
+## React Components
+
+React applications are built using components. A component is an independent and reusable piece of the user interface that contains its own structure, logic, and potentially styling.
+
+React components are JavaScript functions that
+return React elements. Those elements are then turned into DOM elements by React during the
+rendering process.
+
+In order to create a React component, we write a named function (using PascalCase) and have it
+return the desired elements using JSX.
+
+```jsx
+function MyButton() {
+  return (
+    <button type="button" className="default-button">
+      I'm a button
+    </button>
+  );
+}
+```
+
+This is a very powerful concept, because it allows us to reuse the same component in multiple places
+in our application.
+
+<details>
+> 💡 There are hardly any limitations to how 'small' a component can be (i.e. a button), or how
+> 'big' (i.e. an entire page).
+
+> 📙 Read about [**Your First Component**
+> in the React Docs](https://react.dev/learn/your-first-component).
+>
+> **Note**: _Exporting the component_ and _Nesting and organizing components_ are out of scope for this first session.
+
+</details>
+
+---
+
 ## `createButton()` with different `valueTypes` as `props`
 
 ```jsx
