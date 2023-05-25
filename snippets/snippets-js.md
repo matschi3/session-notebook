@@ -1,7 +1,3 @@
-# Snippets
-
----
-
 ## connect javascript index.js
 
 `html`
