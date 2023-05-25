@@ -124,7 +124,8 @@ function Button({ color, disabled, isHappy, text, onButton, value }) {
 ```
 
 <details><summary>Handout // Props</summary>
-# React Props
+
+## React Props
 
 ## Learning Objectives
 
